@@ -1,6 +1,76 @@
+<!doctype html>
 <html>
-  <body>
-    <h1>Hello!</h1>
-    <input type="text">
-  </body>
+<head>
+<meta charset="utf-8">
+<title>Document sans nom</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<form action="">
+    <fieldset><legend>Vos Cordonnées</legend>
+        <table>
+            <tr>
+                <td><label for="np">Nom et Prenom*: </label></td>
+                <td><input type="text" id="np" name="np" required></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Mot De Passe: </label></td>
+                <td><input type="password" id="pass" name="pass"></td>
+            </tr>
+            <tr>
+                <td><label for="gnr">Genre: </label></td>
+                <td>
+                    <input type="radio" id="gnr" name="gnr" value="homme"><label>Homme</label>
+                    <br>
+                    <input type="radio" id="gnr" name="gnr" value="femme"><label>Femme</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="ncin">NCIN: </label></td>
+                <td><input type="number" name="ncin" id="ncin"></td>
+            </tr>
+            <tr>
+                <td><label for="dn">Date de naissance*: </label></td>
+                <td><input type="date" name="dn" id="dn" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-Mail*:</label></td>
+                <td><input type="email" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="tel">Tel: </label></td>
+                <td><input type="tel" name="tel" id="tel"></td>
+            </tr>
+            <tr>
+                <td><label for="capd">Contact à partie de :</label></td>
+                <td><input type="time" name="capd" id="capd"></td>
+            </tr>
+            <tr>
+                <td><label for="dp">Diplome : </label></td>
+                <td><select name="dp" id="dp"><option value="Licence">Licence</option><option value="master">Master</option><option value="doctorat">Doctorat</option></select></td>
+            </tr>
+            <tr>
+                <td><label for="ville">Ville :</label></td>
+                <td><input type="text" list="ts"></td>
+            </tr>
+            <tr>
+                <td><label for="nds">Niveau de satisfaction:</label></td>
+                <td><input type="range" name="nds" id="nds"></td>
+            </tr>
+            <tr>
+                <td><label for="commmantaire">Commetaire: </label></td>
+                <td><textarea name="commmantaire" id="commmantaire" placeholder="Ecrire un Commetaire ici.."></textarea></td>
+            </tr>
+            <tr><td></td><td><button type="reset">Effacer</button></td></tr>
+            <tr><td></td><td><button type="submit">Envoyer</button></td></tr>
+        </table>
+        <datalist id="ts">
+            <option value="Gafsa"></option>
+            <option value="Tunis"></option>
+            <option value="Nabeul"></option>
+        </datalist>
+    </fieldset>
+</form>
+</body>
 </html>
